@@ -1,0 +1,266 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    color: #141E62;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100vw;
+    
+}
+.link-box {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2%;
+}
+.link-text {
+    margin-right: 10%;
+    font-size: 3vh;
+    position: relative;
+    top: 5vh;
+    right: 3vw;
+    text-decoration: none;
+    color: #141E62;
+    
+}
+.link-text:hover {
+    text-decoration: underline;
+}
+.logo {
+    position: relative;
+    left: 3vw;
+}
+section {
+    
+    height: 100vh;
+    width: 100vw;
+}
+.left-about {
+    
+    height: 100vh;
+    width: 50vw;
+}
+.about-h.left-about-h {
+    line-height: 100%;
+    font-size: 250%;
+}
+.about-h.about-right-h {
+    line-height: 100%;
+    font-size: 250%;
+}
+.right-about {
+    
+    height: 100vh;
+    width: 50vw;
+}
+.about {
+    display: flex;
+}
+.hero-p {
+    font-size: 250%;
+}
+.hero-p.hero-second {
+    font-size: 200%;
+}
+.hero-h {
+    font-size: 350%;
+}
+.hero-text-cont {
+    line-height: 350%;
+    width: 25vw;
+}
+.hero-text {
+    position: relative;
+    top: 0%;
+    left: 60%;
+}
+.shop-p {
+    font-size: 250%;
+}
+.shop-h {
+    font-size: 350%;
+}
+.shop-text-cont {
+    line-height: 100%;
+}
+.shop-second {
+    line-height: 150%;
+}
+.shop-text {
+    position: relative;
+    top: 25%;
+    left: 10%;
+}
+.about-p {
+    font-size: 250%;
+}
+.about-h {
+    font-size: 350%;
+}
+.about-text {
+    line-height: 100%;
+    position: relative;
+    left: 12.5vw;
+    width: 25vw;
+    top: 10vh;
+   
+}
+.about-text-cont-left {
+    position: relative;
+    top: 11.5vh;
+}
+.top-left {
+    height: 50vh;
+    width: 50vw;
+    
+    /* background-image: url(./alpilean-home.png);
+    background-size: contain;
+    background-repeat: no-repeat; */
+}
+.top-right {
+    height: 50vh;
+    width: 50vw;
+    
+}
+.bottom-right {
+    height: 50vh;
+    width: 50vw;
+    /* background-image: url(./full-product.png);
+    background-size: contain;
+    background-repeat: no-repeat; */
+}
+.shop {
+    height: 100vh;
+    width: 100vw;
+    
+}
+.hero {
+    background-image: url(./hero.jpg);
+    height: 90vh;
+    background-size: cover;
+}
+.about-img {
+    height: 50vh;
+    width: 40vw;
+}
+.top-left-img {
+    position: relative;
+    left: 5vw;
+}
+.bottom-right-img {
+    position: relative;
+    left: 5vw;
+}
+.shop-img {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+.about-btn {
+    position: relative;
+    left: 2vw;
+}
+
+.herobtn {
+	padding: 1% 2%;
+	font-family: sans-serif;
+	text-decoration: none;
+	color: #141E62;
+	font-size: 150%;
+	letter-spacing: 2%;
+	border: 5px solid #141E62;
+	position: relative;
+	transition: 1s;
+    z-index: 2;
+    cursor: pointer;
+    
+    
+}
+
+.herobtn:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #141E62;
+	transition: 1s;
+	transform: rotateX(90deg);
+	z-index: -1;
+}
+
+.herobtn:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #141E62;
+	transition: 1s;
+	transform: rotateY(90deg);
+	z-index: -1;
+}
+
+.herobtn:hover:before {
+	transform: rotateX(0);
+}
+
+.herobtn:hover:after {
+	transform: rotateY(0);
+}
+
+.herobtn:hover {
+	color: white;
+}
+@media  only screen and (max-width: 600px) {
+    body {
+        font-size: 50%;
+        width: 100%;
+    }
+    nav {
+       width: 100%;
+       height: 8vh;
+    }
+    .link-box {
+        display: none;
+    }
+    .logo {
+        position: relative;
+        left: 25%;
+    }
+    .about-text {
+        line-height: 250%;
+    }
+    .hero-text {
+        top: 5%;
+    }
+    .herobtn {
+        padding: 2% 4%;
+        margin-top: 10%;
+        
+    }
+    .about-btn {
+        padding: 2% 4%;
+    }
+    .hero {
+        width: 100%;
+        background-size: cover;
+        background-image: url(./renew-you-cover.jpg);
+    }
+    .firstbtn {
+        display: none;
+    }
+    .shop-text {
+        left: 2%;
+    }
+}
